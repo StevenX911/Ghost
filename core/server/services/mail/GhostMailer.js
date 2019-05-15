@@ -14,7 +14,8 @@ function GhostMailer() {
         options = config.get('mail') && _.clone(config.get('mail').options) || {};
 
     this.state = {};
-    this.transport = nodemailer.createTransport(transport, options);
+    // this.transport = nodemailer.createTransport(transport, options);
+    this.transport = nodemailer.createTransport(options);
     this.state.usingDirect = transport === 'direct';
 }
 
@@ -25,7 +26,7 @@ GhostMailer.prototype.from = function () {
     // If we don't have a from address at all
     if (!from) {
         // Default to ghost@[blog.url]
-        from = 'ghost@' + this.getDomain();
+        from = 'admin@' + this.getDomain();
     }
 
     // If we do have a from address, and it's just an email

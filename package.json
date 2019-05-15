@@ -22,6 +22,8 @@
   "main": "./core/index",
   "scripts": {
     "start": "node index",
+    "prod": "NODE_ENV=production node index.js",
+    "pm2": "pm2 startOrRestart pm2.json",
     "dev": "DEBUG=ghost:* grunt dev",
     "test": "grunt validate",
     "ci": "grunt validate --verbose",
@@ -103,7 +105,7 @@
     "nconf": "0.10.0",
     "netjet": "1.3.0",
     "node-jose": "1.1.0",
-    "nodemailer": "0.7.1",
+    "nodemailer": "4.4.0",
     "oauth2orize": "1.11.0",
     "oembed-parser": "1.2.2",
     "passport": "0.4.0",

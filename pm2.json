@@ -1,0 +1,18 @@
+{
+    "apps" : [
+        {
+            "name"      : "51xxbb_ghost",
+            "max_memory_restart": "300M",
+            "script"    : "index.js",
+            "log_date_format": "YYYY-MM-DD HH:mm Z",
+            "out_file" : "./pm2log/else_ghost_out.log",
+            "error_file" : "./pm2log/else_ghost_error.log",
+            "instances"  : 2,
+            "merge_logs": true,
+            "exec_mode"  : "cluster",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    ]
+ }
