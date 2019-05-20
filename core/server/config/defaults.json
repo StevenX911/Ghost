@@ -36,19 +36,19 @@
         "user_login": {
             "minWait": 600000,
             "maxWait": 604800000,
-            "freeRetries": 4
+            "freeRetries": 99
         },
         "user_reset": {
             "minWait": 3600000,
             "maxWait": 3600000,
             "lifetime": 3600,
-            "freeRetries": 4
+            "freeRetries": 99
         },
         "global_reset": {
             "minWait": 3600000,
             "maxWait": 3600000,
             "lifetime": 3600,
-            "freeRetries":4
+            "freeRetries":99
         },
         "global_block": {
             "minWait": 3600000,
