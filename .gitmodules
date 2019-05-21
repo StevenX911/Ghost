@@ -1,9 +1,6 @@
 [submodule "content/themes/casper"]
 	path = content/themes/casper
 	url = https://github.com/StevenX911/Casper.git
-[submodule "content/themes/attila"]
-	path = content/themes/attila
-	url = https://github.com/StevenX911/attila.git
 [submodule "core/client"]
 	path = core/client
 	url = https://github.com/StevenX911/Ghost-Admin.git
