@@ -1,0 +1,6 @@
+{
+    "ignore": [
+      "pm2log/*",
+      "content/*"
+    ]
+}
