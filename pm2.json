@@ -1,7 +1,7 @@
 {
     "apps" : [
         {
-            "name"      : "51xxbb_ghost",
+            "name"      : "tripfe_ghost",
             "max_memory_restart": "300M",
             "script"    : "index.js",
             "log_date_format": "YYYY-MM-DD HH:mm Z",
