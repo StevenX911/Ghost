@@ -137,6 +137,7 @@ module.exports = function setupSiteApp(options = {}) {
 
     // Serve robots.txt if not found in theme
     siteApp.use(shared.middlewares.servePublicFile('robots.txt', 'text/plain', constants.ONE_HOUR_S));
+    siteApp.use(shared.middlewares.servePublicFile('bdunion.txt', 'text/plain', constants.ONE_HOUR_S));
 
     // setup middleware for internal apps
     // @TODO: refactor this to be a proper app middleware hook for internal & external apps
