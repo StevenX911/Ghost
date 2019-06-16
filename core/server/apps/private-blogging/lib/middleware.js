@@ -69,22 +69,6 @@ const privateBlogging = {
             });
         }
 
-        if (req.url.lastIndexOf('/bdunion.txt', 0) === 0) {
-            return fs.readFile(path.resolve(__dirname, '../', 'bdunion.txt'), function readFile(err, buf) {
-                if (err) {
-                    return next(err);
-                }
-
-                res.writeHead(200, {
-                    'Content-Type': 'text/plain',
-                    'Content-Length': buf.length,
-                    'Cache-Control': 'public, max-age=' + config.get('caching:robotstxt:maxAge')
-                });
-
-                res.end(buf);
-            });
-        }
-
         // CASE: Allow private RSS feed urls.
         // Any url which contains the hash and the postfix /rss is allowed to access a private rss feed without
         // a session. As soon as a path matches, we rewrite the url. Even Express uses rewriting when using `app.use()`.
