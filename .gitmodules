@@ -4,3 +4,6 @@
 [submodule "core/client"]
 	path = core/client
 	url = https://github.com/StevenX911/Ghost-Admin.git
+[submodule "content/themes/Editorial"]
+	path = content/themes/Editorial
+	url = https://github.com/StevenX911/Editorial.git
