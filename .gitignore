@@ -127,3 +127,4 @@ CHANGELOG.md
 
 /core/server/config/env/*
 /pm2log/*
+/built/*
