@@ -1,9 +1,3 @@
-[submodule "content/themes/casper"]
-	path = content/themes/casper
-	url = https://github.com/StevenX911/Casper.git
 [submodule "core/client"]
 	path = core/client
 	url = https://github.com/StevenX911/Ghost-Admin.git
-[submodule "content/themes/Editorial"]
-	path = content/themes/Editorial
-	url = https://github.com/StevenX911/Editorial.git

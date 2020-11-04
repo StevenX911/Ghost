@@ -104,9 +104,6 @@ projectFilesBackup
 /content/apps/**/*
 /content/themes/**/*
 /content/images/**/*
-/content/adapters/storage/**/*
-/content/adapters/scheduling/**/*
-!/content/themes/casper
 !/README.md
 !/content/**/README.md
 
