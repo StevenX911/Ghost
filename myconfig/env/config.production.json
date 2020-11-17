@@ -1,0 +1,35 @@
+{
+    "url": "https://www.tripfe.cn",
+    "database": {
+        "client": "mysql",
+        "connection": {
+            "host"     : "127.0.0.1",
+            "user"     : "你的数据库用户名",
+            "password" : "你的数据库密码",
+            "database" : "ghost"
+        }
+    },
+    "mail": {
+        "transport": "SMTP",
+        "options": {
+            "host": "smtp.exmail.qq.com",
+            "port": 465,
+            "secure": true,
+            "auth": {
+                "user": "邮箱服务提供账户",
+                "pass": "邮箱服务提供密码"
+            }
+        },
+        "from": "admin@tripfe.cn"
+    },
+    "paths": {
+        "contentPath": "content/"
+    },
+    "logging": {
+        "level": "info",
+        "rotation": {
+            "enabled": true
+        },
+        "transports": ["file", "stdout"]
+    }
+}

@@ -1,9 +1,9 @@
 {
   "name": "ghost",
   "version": "2.22.2",
-  "description": "The professional publishing platform",
-  "author": "Ghost Foundation",
-  "homepage": "https://ghost.org",
+  "description": "我的前端博客",
+  "author": "StevenX911",
+  "homepage": "https://wwww.tripfe.cn",
   "keywords": [
     "ghost",
     "blog",
@@ -14,19 +14,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/TryGhost/Ghost.git"
+    "url": "git://github.com/StevenX911/Ghost.git"
   },
-  "bugs": "https://github.com/TryGhost/Ghost/issues",
-  "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
+  "bugs": "https://github.com/StevenX911/Ghost/issues",
+  "contributors": ["https://github.com/StevenX911/Ghost/graphs/contributors"],
   "license": "MIT",
   "main": "./core/index",
   "scripts": {
     "start": "nodemon index",
     "prod": "NODE_ENV=production node index.js",
-    "pm2": "pm2 startOrRestart pm2.json",
+    "pm2:start": "pm2 startOrRestart pm2.json",
+    "pm2:status": "pm2 status",
+    "pm2:del":"pm2 del all",
+    "pm2:stop":"pm2 stop all",
     "dev": "DEBUG=ghost:* grunt dev",
     "test": "grunt validate",
-    "webpack": "webpack",
     "ci": "grunt validate --verbose",
     "ci:regression": "grunt test-regression --verbose",
     "setup": "yarn install && knex-migrator init && grunt symlink && grunt init || true",
@@ -36,7 +38,7 @@
     "posttest": "yarn lint",
     "fixmodulenotdefined": "yarn cache clean && cd core/client && rm -rf node_modules tmp dist && yarn && cd ../../",
     "postinstall": "cpy node_modules/@tryghost/members-theme-bindings/build/members-theme-bindings.js core/server/public/",
-    "gulp:copy": "gulp"
+    "gulp": "gulp"
   },
   "engines": {
     "node": "^6.9.0 || ^8.9.0 || ^10.13.0",
@@ -114,6 +116,7 @@
     "passport-http-bearer": "1.0.1",
     "passport-oauth2-client-password": "0.1.2",
     "path-match": "1.2.4",
+    "pm2": "^4.5.0",
     "rss": "1.2.2",
     "sanitize-html": "1.20.0",
     "semver": "5.6.0",
