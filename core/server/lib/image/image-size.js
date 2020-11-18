@@ -1,5 +1,6 @@
 const debug = require('ghost-ignition').debug('utils:image-size');
 const sizeOf = require('image-size');
+const path = require('path');
 const url = require('url');
 const Promise = require('bluebird');
 const _ = require('lodash');
@@ -82,6 +83,13 @@ getImageSizeFromUrl = (imagePath) => {
     let requestOptions;
     let parsedUrl;
     let timeout = config.get('times:getImageSizeTimeoutInMS') || 10000;
+
+    // fix bug： 当服务启动时，页面首先会去请求URL，此时端口还未开放，报错
+    // TODO： 此处暂时规避，待深入流程后重新改造
+    if(imagePath === urlService.utils.urlFor({relativeUrl: '/favicon.ico'}, true)){
+        imagePath = path.join(config.get('paths:publicFilePath'), 'favicon.ico');
+        return getImageSizeFromStoragePath(imagePath);
+    }
 
     if (storageUtils.isLocalImage(imagePath)) {
         // don't make a request for a locally stored image
