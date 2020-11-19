@@ -1,5 +1,5 @@
 {
-    "url": "https://ghost.localhost",
+    "url": "http://127.0.0.1:2368",
     "database": {
         "client": "mysql",
         "connection": {
