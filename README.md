@@ -3,8 +3,8 @@
 <a href="https://github.com/StevenX911/Ghost/releases/">
     <img src="https://img.shields.io/github/release/StevenX911/Ghost.svg" alt="Latest release" />
 </a>
-<a href="https://travis-ci.org/StevenX911/Ghost">
-    <img src="https://travis-ci.org/StevenX911/Ghost.svg?branch=master" alt="Build status" />
+<a href="https://travis-ci.com/StevenX911/Ghost">
+    <img src="https://travis-ci.com/StevenX911/Ghost.svg?branch=master" alt="Build status" />
 </a>
 
 #### 简述
