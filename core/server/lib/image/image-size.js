@@ -86,7 +86,7 @@ getImageSizeFromUrl = (imagePath) => {
 
     // fix bug： 当服务启动时，页面首先会去请求URL，此时端口还未开放，报错
     // TODO： 此处暂时规避，待深入流程后重新改造
-    if(imagePath === urlService.utils.urlFor({relativeUrl: '/favicon.ico'}, true)){
+    if (imagePath === urlService.utils.urlFor({relativeUrl: '/favicon.ico'}, true)) {
         imagePath = path.join(config.get('paths:publicFilePath'), 'favicon.ico');
         return getImageSizeFromStoragePath(imagePath);
     }
