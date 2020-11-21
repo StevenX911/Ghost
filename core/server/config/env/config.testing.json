@@ -1,16 +1,15 @@
 {
     "url": "http://127.0.0.1:2369",
+    "database": {
+        "client": "sqlite3",
+        "connection": {
+            "filename": "content/data/ghost-test.db"
+        },
+        "useNullAsDefault": true,
+        "debug": false
+    },
     "server": {
         "port": 2369
-    },
-    "database": {
-        "client": "mysql",
-        "connection": {
-            "host"     : "127.0.0.1",
-            "user"     : "root",
-            "password" : "",
-            "database" : "ghost_testing"
-        }
     },
     "logging": {
         "level": "fatal"

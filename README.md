@@ -1,5 +1,12 @@
 # 我的个人博客
 
+<a href="https://github.com/StevenX911/Ghost/releases/">
+    <img src="https://img.shields.io/github/release/StevenX911/Ghost.svg" alt="Latest release" />
+</a>
+<a href="https://travis-ci.org/StevenX911/Ghost">
+    <img src="https://travis-ci.org/StevenX911/Ghost.svg?branch=master" alt="Build status" />
+</a>
+
 #### 简述
 
 本博客基于[Ghost](./Ghost.md)搭建，部署于国内阿里云，并使用七牛云CDN对站点进行全站加速。数据存储使用Mysql，博客后台界面由Ghost官方提供(基于ember实现)，博客前台由笔者撰写(`未开源`)，同时基于Ghost-API向小程序等第三方平台提供API。另外，笔者同时将博客内置邮箱服务改为了腾讯企业邮箱，可通过admin@tripfe.cn向外收发邮件，原始版本中的邮箱组件版本较低，已替换为较新版本，并配置上线可用。
